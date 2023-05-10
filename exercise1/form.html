@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./form.html">Form</a></li>
+        </ul>
+    </nav>
+
+    <!-- VI. HTML elements - Forms - form, input, label, select, option, button -->
+    <form action="http://localhost:3000/profile" method="POST">
+        <div>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName">
+        </div>
+        <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName">
+        </div>
+        <div>
+            <label for="title">Title</label>
+            <label for="mr">Mr.</label>
+            <input type="radio" name="title" id="mr" value="Mr">
+            <label for="ms">Ms.</label>
+            <input type="radio" name="title" id="ms" value="Ms">
+            <label for="phd">PHd.</label>
+            <input type="radio" name="title" id="phd" value="PHd">
+        </div>
+        <div>
+            <label for="married">Married</label>
+            <input type="checkbox" name="married" id="married">
+        </div>
+        <div>
+            <label for="nationality">Nationality</label>
+            <select name="nationality" id="nationality">
+                <option value="Korea">Korea</option>
+                <option value="New_Zealand">New Zealand</option>
+                <option value="Australia">Australia</option>
+            </select>
+        </div>
+        <div> <button type="submit">Submit form</button></div>
+    </form>
+</body>
+
+</html>

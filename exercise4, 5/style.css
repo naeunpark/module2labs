@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* Normalize CSS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #CCD5AE;
+    --secondary-color: #E9EDC9;
+    --third-color: #FEFAE0;
+    --fourth-color: #FAEDCD;
+    --container-padding: 2rem;
+    --innercontainer-padding: 1rem;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Wix Madefor Text', sans-serif;
+}
+
+@media screen and (min-width: 600px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        flex-direction: row;
+    }
+}
+
+
+/* ASIDE CSS */
+
+aside {
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.8rem;
+    padding-top: var(--container-padding);
+    padding-bottom: var(--container-padding);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+}
+
+aside>h2 {
+    background-color: var(--secondary-color);
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#image-container {
+    background-image: url(./assets/catherine_img.jpg);
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    margin: var(--innercontainer-padding);
+}
+
+@media screen and (min-width: 600px) {
+    #image-container {
+        margin: 2rem;
+    }
+}
+
+.skill-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-weight: 600;
+}
+
+.skill-container>span {
+    padding-left: var(--innercontainer-padding);
+    padding-right: var(--innercontainer-padding);
+}
+
+
+/* SECTION(EXPERIENCE) CSS */
+
+section {
+    padding: var(--container-padding);
+}
+
+article:nth-child(2)>h2 {
+    padding-top: var(--container-padding);
+}
+
+article>div {
+    border-bottom: 1px solid var(--fourth-color);
+    padding: var(--innercontainer-padding);
+    line-height: 1.5rem;
+}
+
+article>div>p {
+    margin: 0.4rem 0;
+    font-weight: 600;
+}
+
+ul {
+    padding-left: var(--innercontainer-padding);
+}
+
+footer {
+    background-color: var(--third-color);
+    padding: 1rem;
+    text-align: center;
+}
